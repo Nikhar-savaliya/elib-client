@@ -9,7 +9,7 @@ const BookList = async (props: Props) => {
     cache: "no-store",
   });
   const books = await response.json();
-  // console.log(await response.json());
+  // console.log(books);
   return (
     <section className=" max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
       {books.map((bk: Book) => (
