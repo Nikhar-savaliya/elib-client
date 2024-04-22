@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-4">
           <Link href={"/register"}>
             <Button
-              variant={"ghost"}
+              variant={"outline"}
               className="flex items-center justify-center gap-1"
             >
               {/* <LogIn width={18} height={18} /> */}

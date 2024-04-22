@@ -12,8 +12,9 @@ const BookList = async (props: Props) => {
   // console.log(books);
   return (
     <section className=" max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-      {books.map((bk: Book) => (
+      {books.map((bk: Book, index: number) => (
         <BookCard
+          key={index}
           _id={bk._id}
           author={bk.author}
           title={bk.title}
