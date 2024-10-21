@@ -12,26 +12,21 @@ const Header: React.FC = () => {
           <Logo />
         </Link>
         {/* BUTTONS */}
-        <div className="flex items-center gap-4">
-          <Link href={"/register"}>
-            <Button
-              variant={"outline"}
-              className="flex items-center justify-center gap-1"
-            >
-              {/* <LogIn width={18} height={18} /> */}
-              Register
-            </Button>
-          </Link>
+        <Link href={"https://elib-dashboard-eight.vercel.app/"}>
+          <Button className="flex items-center justify-center gap-1">
+            Upload a Book
+          </Button>
+        </Link>
+        {/* <div className="flex items-center gap-4">
           <Link href={"/login"}>
             <Button
               variant={"default"}
               className="flex items-center justify-center gap-1"
             >
-              {/* <LogIn width={18} height={18} /> */}
               Login
             </Button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
@@ -42,7 +37,7 @@ const Logo: React.FC = () => {
     <div className="flex items-center gap-2">
       <BookOpenText className="text-primary pt-0.5" />
       <span className="tracking-tighter font-bold text-2xl text-foreground">
-        elib
+        eLibrary
       </span>
     </div>
   );
